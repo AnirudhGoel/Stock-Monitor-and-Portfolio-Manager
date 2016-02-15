@@ -29,6 +29,7 @@ A project created by me at NSIT Financial Hackathon in 8 hours.
 * **Portfolio Page**
 
 > Your complete portfolio appears here as you add/delete stocks from Modification Page.
+
 ![Alt-text](/Screenshots/2%20Blank%20Portfolio%20Page.png)
 
 
@@ -38,6 +39,7 @@ A project created by me at NSIT Financial Hackathon in 8 hours.
 * **Live Search Suggestions**
 
 > If you don't remember the stock symbol but only the name of company, no need to worry with live search suggestions where you can see the stock symbol by searching for company name (works only if the company's stock name contains company's name; i.e, work for most of companies).
+
 ![Alt-text](/Screenshots/3%20Suggestion%20Feature.png)
 
 
@@ -76,6 +78,7 @@ A project created by me at NSIT Financial Hackathon in 8 hours.
 
 
 > The value appears in Portfolio on next refresh.
+
 ![Alt-text](/Screenshots/9%20One%20Value%20Port.png)
 
 - - -
