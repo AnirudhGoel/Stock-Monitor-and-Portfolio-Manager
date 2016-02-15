@@ -1,0 +1,46 @@
+body
+{
+	background-color: #FFFFFF;
+	/*background-image: url("Background 3.jpg"); */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 1500px;
+}
+
+.jumbotron 
+{
+	background-color: #9999ff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+	color: White;
+	text-align: center;
+}
+
+.head 
+{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	font-size: 23px;
+}
+
+h1{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h3{
+	font-family: 'Josefin Sans', sans-serif;
+}
+.disclaimer
+{
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+.buttons
+{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+}

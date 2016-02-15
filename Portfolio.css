@@ -1,0 +1,58 @@
+body
+{
+	background-color: #FFFFFF;
+	/*background-image: url("Background 3.jpg"); */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 1500px;
+}
+
+.jumbotron 
+{
+	background-color: #9999ff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+	color: White;
+	text-align: center;
+}
+
+.table 
+{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
+
+.head 
+{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	font-size: 23px;
+}
+
+h1{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.fa-arrow-down
+{
+	color: Red;
+}
+
+.fa-arrow-up 
+{
+	color: Green;
+}
+
+.disclaimer
+{
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+.download
+{
+	margin-right: 30px;
+}
