@@ -46,7 +46,7 @@
 	{
 		while($row = mysqli_fetch_assoc($result)) 
 		{
-			$sym[$y] = $row["stock_symbol"];
+			$sym[$y] = $row["stocks_symbol"];
 			$pri[$y] = $row["price"];
 			$vol[$y] = $row["volume"];
 			$y += 1;
@@ -64,7 +64,7 @@
 
 	$z = '';
 
-	// Adding all stock names in one variable to enable API call
+	// Adding all stocks names in one variable to enable API call
 	for($a=0;$a<$y;$a++)
 	{
 		$z = $z.$sym[$a].',';

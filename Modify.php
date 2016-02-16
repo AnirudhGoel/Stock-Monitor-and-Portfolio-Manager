@@ -116,9 +116,18 @@
 
 		// Creating Database
 		$sql = 'CREATE DATABASE IF NOT EXISTS stocks';
+		if(mysqli_query($conn, $sql))
+		{
+
+		}
+		else
+		{
+			echo "Error creating database" . mysqli_error($conn);
+			die();
+		}
 
 		// Establising Connection to Database
-		$db = 'stocks';
+		$db = "stocks";
 
 		// Create Connection
 		$dbconn = mysqli_select_db($conn, $db);
@@ -132,15 +141,18 @@
 		// Create Table
 		$sql = "CREATE TABLE IF NOT EXISTS portfolio
 		(
-			stock_symbol VARCHAR(30) PRIMARY KEY,
+			stocks_symbol VARCHAR(30) PRIMARY KEY,
 			price INT(30),
 			volume INT(30)
 		)";
 
-		if (!mysqli_query($conn, $sql)) 
+		if (mysqli_query($conn, $sql))
+		{
+
+		}
+		else
 		{
 			echo "Error creating table: " . mysqli_error($conn);
-			die();
 		}
 
 		for($x=1;$x<=5;$x++)
@@ -154,7 +166,7 @@
 				$pri[$x] = $_POST['pri'.$x];
 				$vol[$x] = $_POST['vol'.$x];
 				$sql = "INSERT INTO portfolio 
-					(stock_symbol, price, volume)
+					(stocks_symbol, price, volume)
 					VALUES ('$var[$x]', $pri[$x], $vol[$x])";
 					// Code to be reviewed
 					// ON DUBLICATE PRIMARY KEY UPDATE
@@ -185,10 +197,10 @@
 
 	else if(isset($_POST['Delete']))
 	{
-		// Checking wether stock symbol (required) is given
+		// Checking wether stocks symbol (required) is given
 		if(empty($_POST['var1']))
 		{
-			?><h1><center>To delete values atleast enter the symbol of stock to be deleted.</center></h1><?php
+			?><h1><center>To delete values atleast enter the symbol of stocks to be deleted.</center></h1><?php
 			die();
 		}
 
@@ -232,7 +244,7 @@
 				$pri[$x] = $_POST['pri'.$x];
 				$vol[$x] = $_POST['vol'.$x];
 				$sql = "DELETE FROM portfolio 
-				WHERE stock_symbol='$var[$x]' and price=$pri[$x] and volume=$vol[$x]";
+				WHERE stocks_symbol='$var[$x]' and price=$pri[$x] and volume=$vol[$x]";
 
 				// Check if values are deleted successfully
 				if(mysqli_query($conn, $sql))
@@ -256,7 +268,7 @@
 				$var[$x] = $_POST['var'.$x];
 				$pri[$x] = $_POST['pri'.$x];
 				$sql = "DELETE FROM portfolio 
-				WHERE stock_symbol='$var[$x]' and price=$pri[$x]";
+				WHERE stocks_symbol='$var[$x]' and price=$pri[$x]";
 
 				// Check if values are deleted successfully
 				if(mysqli_query($conn, $sql))
@@ -280,7 +292,7 @@
 				$var[$x] = $_POST['var'.$x];
 				$vol[$x] = $_POST['vol'.$x];
 				$sql = "DELETE FROM portfolio 
-				WHERE stock_symbol='$var[$x]' and volume=$vol[$x]";
+				WHERE stocks_symbol='$var[$x]' and volume=$vol[$x]";
 
 				// Check if values are deleted successfully
 				if(mysqli_query($conn, $sql))
@@ -303,7 +315,7 @@
 			{
 				$var[$x] = $_POST['var'.$x];
 				$sql = "DELETE FROM portfolio 
-				WHERE stock_symbol='$var[$x]'";
+				WHERE stocks_symbol='$var[$x]'";
 
 				// Check if values are deleted successfully
 				if(mysqli_query($conn, $sql))
