@@ -167,10 +167,9 @@
 				$vol[$x] = $_POST['vol'.$x];
 				$sql = "INSERT INTO portfolio 
 					(stocks_symbol, price, volume)
-					VALUES ('$var[$x]', $pri[$x], $vol[$x])";
-					// Code to be reviewed
-					// ON DUBLICATE PRIMARY KEY UPDATE
-					// price=VALUES($pri[$x]), volume=VALUES($vol[$x]);";
+					VALUES ('$var[$x]', $pri[$x], $vol[$x])
+					ON DUPLICATE KEY UPDATE
+					price=$pri[$x], volume=$vol[$x]";
 
 				// Check if values are added successfully
 				if(mysqli_query($conn, $sql))
