@@ -22,8 +22,9 @@ h1
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-/*.btn
+.btn
 {
-	height: 70px;
-	width: 700px;
-}*/
+	height: 75px;
+	width: 300px;
+	font-size: 30px;
+}
