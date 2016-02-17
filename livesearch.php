@@ -7,8 +7,10 @@ $x=$xmlDoc->getElementsByTagName('link');
 //get the q parameter from URL
 $q=$_GET["q"];
 
+$hint="";
+
 //lookup all links from the xml file if length of q>0
-if (strlen($q)>0) {
+if (strlen($q)>2) {
 	$hint="";
 	for($i=0; $i<($x->length); $i++) {
 	$y=$x->item($i)->getElementsByTagName('title');
@@ -27,7 +29,7 @@ if (strlen($q)>0) {
 
 // Set output to "Not valid stock symbol" if no hint was found
 // or to the correct values
-if ($hint=="") {
+if ($hint=="" and strlen($q) > 2) {
 	$response="Not valid stock symbol";
 } else {
 	$response=$hint;
