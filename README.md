@@ -51,7 +51,6 @@ A project created by me at NSIT Financial Hackathon in 8 hours.
 
 > 5 input rows are provided so that the user can enter or delete 5 values at a time making the modification process quicker. However, the choice is entirely upto user to fill any number of rows that he/she wants to.
 
-![Alt-text](/Screenshots/5%20Fill%20one%20field%20of%20first%20row.png)
 
 
 - - -
@@ -72,10 +71,6 @@ A project created by me at NSIT Financial Hackathon in 8 hours.
   A demo of this process is shown in below shown images.
 
 ![Alt-text](/Screenshots/16%20Delete%20Demo%201.png)
-
-- - -
-
-![Alt-text](/Screenshots/17%20Delete%20Demo%202.png)
 
 - - -
 
