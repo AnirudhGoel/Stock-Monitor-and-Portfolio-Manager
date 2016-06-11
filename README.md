@@ -62,31 +62,6 @@ A project created by me at NSIT Financial Hackathon in 8 hours.
 
 > With the project connected to MySQL database, you can enter as many entries as you want to.
 
-![Alt-text](/Screenshots/10%20Unlimited%20Data%201.png)
-
-- - -
-
-![Alt-text](/Screenshots/11%20Unlimited%20Data%202.png)
-
-- - -
-
-![Alt-text](/Screenshots/12%20Unlimited%20Data%20Port%201.png)
-
-- - -
-
-![Alt-text](/Screenshots/13%20Unlimited%20Data%203.png)
-
-- - -
-
-![Alt-text](/Screenshots/14%20Unlimited%20Data%204.png)
-
-- - -
-
-![Alt-text](/Screenshots/15%20Unlimited%20Data%20Port%202.png)
-
-- - -
-
-
 
 
 * **Deleting Values**
