@@ -20,7 +20,7 @@ A project created by me at NSIT Financial Hackathon in 8 hours.
 
 > Here you can enter the details of your stocks- Stock Symbol, the Price you bought it at, the Volume you bought.
 
-![Alt-text](/Screenshots/1%20Blank%20Modify%20Page.png)
+![Alt-text](/screenshots/1%20Blank%20Modify%20Page.png)
 
 
 - - -
@@ -30,7 +30,7 @@ A project created by me at NSIT Financial Hackathon in 8 hours.
 
 > Your complete portfolio appears here as you add/delete stocks from Modification Page.
 
-![Alt-text](/Screenshots/2%20Blank%20Portfolio%20Page.png)
+![Alt-text](/screenshots/2%20Blank%20Portfolio%20Page.png)
 
 
 - - -
@@ -40,7 +40,7 @@ A project created by me at NSIT Financial Hackathon in 8 hours.
 
 > If you don't remember the stock symbol but only the name of company, no need to worry with live search suggestions where you can see the stock symbol by searching for company name (works only if the company's stock name contains company's name; i.e, work for most of companies).
 
-![Alt-text](/Screenshots/3%20Suggestion%20Feature.png)
+![Alt-text](/screenshots/3%20Suggestion%20Feature.png)
 
 
 - - -
@@ -64,8 +64,8 @@ A project created by me at NSIT Financial Hackathon in 8 hours.
   Rest all is user's choice; He/She may or may not fill any of the other fields.
   A demo of this process is shown in below shown images.
 
-![Alt-text](/Screenshots/16%20Delete%20Demo%201.png)
+![Alt-text](/screenshots/16%20Delete%20Demo%201.png)
 
 - - -
 
-![Alt-text](/Screenshots/18%20Delete%20Demo%20Port.png)
+![Alt-text](/screenshots/18%20Delete%20Demo%20Port.png)
