@@ -1,6 +1,6 @@
 <?php
 $xmlDoc=new DOMDocument();
-$xmlDoc->load("All Stocks.xml");
+$xmlDoc->load("xml/All Stocks.xml");
 
 $x=$xmlDoc->getElementsByTagName('link');
 
