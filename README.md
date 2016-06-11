@@ -46,12 +46,6 @@ A project created by me at NSIT Financial Hackathon in 8 hours.
 - - -
 
 
-* **Adding Values**
-
-> Adding values is as simple as it gets. You just enter the details and press add.
-
-
-> (Minimum requirement- For adding a value you have to fill all 3 columns for every value that you want to add.)
 
 * **Why 5 input rows ?**
 
@@ -59,29 +53,9 @@ A project created by me at NSIT Financial Hackathon in 8 hours.
 
 ![Alt-text](/Screenshots/5%20Fill%20one%20field%20of%20first%20row.png)
 
-- - -
-
-![Alt-text](/Screenshots/6%20Error%205.png)
 
 - - -
 
-![Alt-text](/Screenshots/7%20Add%20Value%20Demo.png)
-
-- - -
-
-
-> You know when the value is successfully added.
-
-![Alt-text](/Screenshots/8%20One%20Value%20Added.png)
-
-- - -
-
-
-> The value appears in Portfolio on next refresh.
-
-![Alt-text](/Screenshots/9%20One%20Value%20Port.png)
-
-- - -
 
 
 * **Unlimited Data Adding**
