@@ -5,7 +5,7 @@
 		<meta name="keywords" content="HTML,CSS,PHP">
 		<meta name="author" content="Anirudh Goel">
 		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="../css/Modify.css">
+		<link rel="stylesheet" type="text/css" href="css/Modify.css">
 		<link rel="stylesheet" href="http://csinsit.org/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:600,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -90,69 +90,15 @@
 </html>
 
 <?php
+	require_once("inc/connection.inc.php");
 	// If Add button is pressed
 	if(isset($_POST['Add']))
 	{ 
-		// Checking wether first line is completely filled
+		// Checking whether first line is completely filled
 		if(empty($_POST['var1']) or empty($_POST['pri1']) or empty($_POST['vol1']))
 		{
 			?><h1><center>To add values please fill atleast first row completely.</center></h1><?php
 			die();
-		}
-
-		// Establising Connection to SQL
-		$servername = 'localhost';
-		$username = 'root';
-		$password = 'password';
-
-		// Create Connection
-		$conn = mysqli_connect($servername, $username, $password);
-
-		// Check Connection
-		if(!$conn)
-		{
-			die('Connection to SQL failed:' . mysqli_connect_error());
-		}
-
-		// Creating Database
-		$sql = 'CREATE DATABASE IF NOT EXISTS stocks';
-		if(mysqli_query($conn, $sql))
-		{
-
-		}
-		else
-		{
-			echo "Error creating database" . mysqli_error($conn);
-			die();
-		}
-
-		// Establising Connection to Database
-		$db = "stocks";
-
-		// Create Connection
-		$dbconn = mysqli_select_db($conn, $db);
-
-		// Check Connection
-		if(!$dbconn)
-		{
-			die('Connection to Database failed:' . mysqli_connect_error());
-		}
-
-		// Create Table
-		$sql = "CREATE TABLE IF NOT EXISTS portfolio
-		(
-			stocks_symbol VARCHAR(30) PRIMARY KEY,
-			price INT(30),
-			volume INT(30)
-		)";
-
-		if (mysqli_query($conn, $sql))
-		{
-
-		}
-		else
-		{
-			echo "Error creating table: " . mysqli_error($conn);
 		}
 
 		for($x=1;$x<=5;$x++)
